@@ -1,0 +1,32 @@
+{
+  "name": "vue-sfc-codemod",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "bin": "./dist/bin/cli.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "vitest",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "execa": "^9.2.0",
+    "jscodeshift": "^0.15.2"
+  },
+  "devDependencies": {
+    "@types/jscodeshift": "^0.11.11",
+    "@types/node": "^18.19.34",
+    "@vue/compiler-sfc": "^3.4.27",
+    "cac": "^6.7.14",
+    "globby": "^14.0.1",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
