@@ -4,11 +4,20 @@
   "description": "",
   "type": "module",
   "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "bin": "./dist/bin/cli.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "vue-sfc-codemod": "./dist/bin/cli.js"
+  },
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "test": "vitest",
     "build": "tsc"
